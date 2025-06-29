@@ -1,0 +1,35 @@
+Why these names?
+
+Filename	      |     Meaning
+                  |
+lexer.h/cpp	      |Contains code for the Lexer (also called scanner/tokenizer) which breaks input into tokens
+token.h	Defines   |what a Token is (like number, identifier, symbol)
+parser.h/cpp	  |Contains the Parser — reads tokens and makes sense of them (like x = 5 + 3)
+main.cpp	      |The entry point that ties everything together
+
+
+Think of it like this:
+Lexer = "Who are you?" → print, x, =, 5
+
+Parser = "What do you mean?" → print x;, x = 5
+
+Interpreter = "What should I do?" → Actually execute that print x
+
+Why do we say "Lexer" and "Parser"?
+
+These words come from the world of compilers and interpreters,
+used since the early days of programming language design 
+(like in C compilers, Java, Python, etc.).
+
+1. Lexer (short for Lexical Analyzer)
+ Origin: From the word Lexicon, which means a collection of words.
+
+ In programming: It reads characters from source code and groups them into tokens 
+ (like print, x, =, 42).
+
+2. Parser (short for Syntax Parser or Syntactic Analyzer)
+ Origin: From parsing a sentence, like in English grammar.
+
+ It analyzes the structure of code using those tokens to understand meaning.
+
+ like understanding grammar rules: x = 10 + 20;
